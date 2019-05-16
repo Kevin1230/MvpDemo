@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.example.along.mvpdemo.widget.NoRollViewpager
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </com.example.along.mvpdemo.widget.NoRollViewpager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_gravity="bottom"
+        android:background="#E1E1E1"></View>
+    <!--底部的RadioGroup-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_common_home"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_common_home_drawable_selector"
+            android:checked="true"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_trade"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_trade_drawable_selector"
+            android:text="交易" />
+
+        <RadioButton
+            android:id="@+id/rb_optional"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_optional_drawable_selector"
+            android:text="行情" />
+
+        <RadioButton
+            android:id="@+id/rb_financial"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_financial_drawable_selector"
+            android:text="理财" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_my_drawable_selector"
+            android:text="我的" />
+    </RadioGroup>
+
+    <!--<include layout="@layout/include_navbar"/>-->
+</LinearLayout>
