@@ -1,2 +1,1 @@
-# MvProject
-mvpdemo
+# MyProject
